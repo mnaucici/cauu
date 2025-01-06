@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Nastavení pozadí celé stránky na růžovou */
+        body {
+            background-color: pink;
+        }
+
+        /* Nastavení ohraničení tabulky */
+        table {
+            border: 2px solid black; /* Tlusté černé ohraničení */
+            border-collapse: collapse; /* Pro sloučení okrajů buněk */
+            width: 100%; /* Můžeš upravit podle potřeby */
+        }
+
+        /* Nastavení ohraničení a výplně pro buňky tabulky */
+        th, td {
+            border: 1px solid black; /* Ohraničení buněk */
+            padding: 8px; /* Vnitřní výplň buněk */
+            text-align: center; /* Zarovnání textu na střed */
+        }
+    </style>
 </head>
 <body>
     <h1>caukycau</h1>
     <table>
 
         <thead>
-                <tr>
-                    <th>
-                        Bunka 1
-                    </th>
-                    <th>
-                        pondeli
-                    </th>
-                    <th>
-                        nedele
-                    </th>
-                </tr>
+            <tr>
+                <th>Bunka 1</th>
+                <th>pondeli</th>
+                <th>nedele</th>
+            </tr>
         </thead>
-            <tbody>
-                    <td>
-                        bunka 2
-                    </td>
-                    <td>
-                         utery
-                    </td>
-
-
-            </tbody>
-           
+        <tbody>
+            <tr>
+                <td>bunka 2</td>
+                <td>utery</td>
+                <td>streda</td> <!-- Můžeš upravit podle potřeby -->
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
