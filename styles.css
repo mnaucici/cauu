@@ -1,3 +1,25 @@
-body {
-    background: linear-gradient(to right, red, yellow, green, blue, pink);
+
+.back-link {
+    font-size: 18px;
+    color: #007BFF;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    margin: 20px 0;
+}
+
+
+.blinking-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FF6347;
+    text-align: center;
+    animation: blinkAnimation 1s infinite;
+}
+
+
+@keyframes blinkAnimation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
