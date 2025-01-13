@@ -6,20 +6,29 @@
     padding: 10px;
     display: block;
     margin: 20px 0;
+    text-align: center;
 }
 
 
 .blinking-text {
     font-size: 40px;
     font-weight: bold;
-    color: #FF6347;
+    color: white;
     text-align: center;
-    animation: blinkAnimation 1s infinite;
+    margin-top: 50px;
 }
 
 
-@keyframes blinkAnimation {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+@keyframes backgroundBlink {
+    0% { background-color: #FF5733; }
+    25% { background-color: #33FF57; }
+    50% { background-color: #3357FF; }
+    75% { background-color: #FFFF33; }
+    100% { background-color: #FF33FF; }
+}
+
+
+body {
+    animation: backgroundBlink 2s infinite;
+    transition: background-color 0.5s ease;
 }
